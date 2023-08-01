@@ -44,8 +44,13 @@ public class Cliente {
         this.saldo = saldo;
     }
 
+    @Override
     public String toString()
     {
-        return "Olá " + this.getNomeCliente() + ", obrigado por criar uma conta em nosso banco, sua agência é " + this.getAgencia() + ", conta " + this.getNumero() + " e seu saldo " + this.getSaldo() + " já está disponível para saque";
+        return "Olá " + this.getNomeCliente()
+                + ", obrigado por criar uma conta em nosso banco,\nsua agência é "
+                + this.getAgencia() + ", conta "
+                + this.getNumero() + " e seu saldo "
+                + this.getSaldo() + " já está disponível para saque";
     }
 }
