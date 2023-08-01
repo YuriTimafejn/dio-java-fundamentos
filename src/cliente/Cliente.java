@@ -6,13 +6,7 @@ public class Cliente {
     private String nomeCliente;
     private double saldo;
 
-    public Cliente (int numero, String agencia, String nomeCliente, double saldo)
-    {
-        this.numero = numero;
-        this.agencia = agencia;
-        this.nomeCliente = nomeCliente;
-        this.saldo = saldo;
-    }
+    public Cliente () {}
 
     public String getNumero ()
     {
@@ -32,6 +26,22 @@ public class Cliente {
     public String getSaldo ()
     {
         return String.format("%4.2f", this.saldo);
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public void setAgencia(String agencia) {
+        this.agencia = agencia;
+    }
+
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 
     public String toString()
